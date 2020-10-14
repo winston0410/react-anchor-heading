@@ -1,5 +1,5 @@
 import React from 'react'
-import General from 'react-component-boilerplate'
+import General from '@blackblock/react-component-boilerplate'
 import {
   slugify
 } from './utilities/helper.js'
