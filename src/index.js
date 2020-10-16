@@ -4,12 +4,9 @@ import {
   slugify
 } from './utilities/helper.js'
 
-function Heading ({ as = 'h1', attr, children }) {
+function Heading ({ as = 'h1', children, ...attr }) {
   return (
-    <General as={as} attr={{
-      id: slugify(children),
-      ...attr
-    }}>
+    <General as={as} id={slugify(children)} {...attr}>
       {children}
     </General>
   )
