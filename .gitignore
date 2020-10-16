@@ -63,8 +63,6 @@ typings/
 # OSX
 .DS_Store
 
-# Dist
-dist
 
 # Purescript
 output
@@ -77,6 +75,5 @@ output
 
 # Ignore purescript output
 
-
-#jsdoc2md
-README.hbs
+# Dist
+dist/*/*.js
