@@ -1,6 +1,6 @@
 {
   "name": "@blackblock/react-anchor-heading",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A React heading component with id that automatically changes with textContent for anchoring.",
   "keywords": [
     "react",
