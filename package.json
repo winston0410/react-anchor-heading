@@ -7,6 +7,9 @@
     "react-component",
     "react-component-boilerplate"
   ],
+  "hooks": {
+    "post-commit": "npm run build"
+  },
   "type": "module",
   "main": "./dist/cjs/index.cjs.js",
   "module": "./dist/esm/index.mjs.js",
