@@ -10,7 +10,7 @@
   "hooks": {
     "post-commit": "npm run build"
   },
-  "type": "module",
+  "type": "commonjs",
   "main": "./dist/cjs/index.cjs.js",
   "module": "./dist/esm/index.mjs.js",
   "exports": {
