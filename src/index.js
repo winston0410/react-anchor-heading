@@ -4,12 +4,13 @@ import {
   slugify
 } from './utilities/helper.js'
 
-function Heading ({ as = 'h1', children, ...attr }) {
-  return (
-    <General as={as} id={slugify(children)} {...attr}>
-      {children}
-    </General>
-  )
-}
+const Heading = React.forwardRef(
+  function Heading ({ as = 'h1', children, ...attr }, ref) {
+    return (
+      <General ref={ref} as={as} id={slugify(children)} {...attr}>
+        {children}
+      </General>
+    )
+  })
 
 export default Heading
