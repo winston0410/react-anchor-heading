@@ -13,12 +13,12 @@ const Heading = React.forwardRef(
     )
   })
 
-function HeadingPrimitive ({children, text}){
+function HeadingPrimitive ({ children, text }) {
   const id = slugify(text)
-  return children({id, text})
+  return children({ id, text })
 }
 
-export default {
+export {
   Heading,
   HeadingPrimitive
 }
