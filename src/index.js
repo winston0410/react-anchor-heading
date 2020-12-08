@@ -13,4 +13,12 @@ const Heading = React.forwardRef(
     )
   })
 
-export default Heading
+function HeadingPrimitive ({children, text}){
+  const id = slugify(text)
+  return children({id, text})
+}
+
+export default {
+  Heading,
+  HeadingPrimitive
+}
