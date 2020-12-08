@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Heading from '../src/index.js'
+import {
+  Heading
+} from '../src/index.js'
 import { slugify } from '../src/utilities/helper.js'
 const chai = require('chai')
 const expect = chai.expect
